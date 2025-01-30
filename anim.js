@@ -36,38 +36,38 @@ var lyrics = document.querySelector("#lyrics");
 var lyricsData = [
   { text: "Tengo ganas", time: 0 },
   { text: "Tengo tiempo y mil canciones que cantarte", time: 3 },
-  { text: "Tengo historias, tengo cosas que contarte", time: 6 },
-  { text: "Mas hoy tengo tu llegada", time: 9 },
-  { text: "Y mi mano voy a darte", time: 12 },
-  { text: "Es tan lindo cuando existe un sentimiento", time: 15 },
-  { text: "Y cuando quieres", time: 18 },
-  { text: "Cuando cuentas, sin callarte", time: 21 },
-  { text: "Que prefieres", time: 24 },
-  { text: "Por ejemplo yo quisiera si no es mucho", time: 27 },
-  { text: "Que te quedes", time: 30 },
-  { text: "Dame solo un momento", time: 33 },
-  { text: "Dame amor del más cierto", time: 36 },
-  { text: "No te pido más nada", time: 39 },
-  { text: "Dame de tu mirada", time: 42 },
-  { text: "Y de tus sentimientos", time: 45 },
-  { text: "Siente si estoy sintiendo", time: 48 },
-  { text: "No te quedes", time: 51 },
-  { text: "No revises el pasado que entristece", time: 54 },
-  { text: "No te niegues si el amor te pertenece", time: 57 },
-  { text: "Ven y siéntate a mi lado", time: 60 },
-  { text: "Mira el día que amanece", time: 63 },
-  { text: "No respondas callada", time: 66 },
-  { text: "Mucho menos ahora", time: 69 },
-  { text: "No me digas mañana", time: 72 },
-  { text: "Es que vi que pasabas", time: 75 },
-  { text: "Me acerqué porque pienso", time: 78 },
-  { text: "Que por ti yo esperaba", time: 81 },
-  { text: "Tengo ganas", time: 84 },
-  { text: "Tengo tiempo y mil canciones que cantarte", time: 87 },
-  { text: "Tengo historias, tengo cosas que contarte", time: 90 },
-  { text: "Mas hoy tengo tu llegada", time: 93 },
-  { text: "Y mi mano voy a darte", time: 96 },
-  { text: "Voy a darte", time: 99 }
+  { text: "Tengo historias, tengo cosas que contarte", time: 8 },
+  { text: "Mas hoy tengo tu llegada", time: 13 },
+  { text: "Y mi mano voy a darte", time: 15 },
+  { text: "Es tan lindo cuando existe un sentimiento", time: 20 },
+  { text: "Y cuando quieres", time: 25 },
+  { text: "Cuando cuentas, sin callarte", time: 27 },
+  { text: "Que prefieres", time: 30},
+  { text: "Por ejemplo yo quisiera si no es mucho", time: 32 },
+  { text: "Que te quedes", time: 37 },
+  { text: "Dame solo un momento", time: 41 },
+  { text: "Dame amor del más cierto", time: 44 },
+  { text: "No te pido más nada", time: 46 },
+  { text: "Dame de tu mirada", time: 50 },
+  { text: "Y de tus sentimientos", time: 53 },
+  { text: "Siente si estoy sintiendo", time: 56 },
+  { text: "No te quedes", time: 59 },
+  { text: "No revises el pasado que entristece", time: 62 },
+  { text: "No te niegues si el amor te pertenece", time: 66 },
+  { text: "Ven y siéntate a mi lado", time: 71 },
+  { text: "Mira el día que amanece", time: 74 },
+  { text: "No respondas callada", time: 101 },
+  { text: "Mucho menos ahora", time: 105 },
+  { text: "No me digas mañana", time: 107 },
+  { text: "Es que vi que pasabas", time: 112 },
+  { text: "Me acerqué porque pienso", time: 114 },
+  { text: "Que por ti yo esperaba", time: 117 },
+  { text: "Tengo ganas", time: 119 },
+  { text: "Tengo tiempo y mil canciones que cantarte", time: 122 },
+  { text: "Tengo historias, tengo cosas que contarte", time: 127 },
+  { text: "Mas hoy tengo tu llegada", time: 132 },
+  { text: "Y mi mano voy a darte", time: 134 },
+  { text: "Voy a darte", time: 136 }
 ];
 
 
@@ -94,17 +94,4 @@ function updateLyrics() {
 }
 
 setInterval(updateLyrics, 1000);
-
-//funcion titulo
-// Función para ocultar el título después de 216 segundos
-function ocultarTitulo() {
-  var titulo = document.querySelector(".titulo");
-  titulo.style.animation =
-    "fadeOut 3s ease-in-out forwards"; /* Duración y función de temporización de la desaparición */
-  setTimeout(function () {
-    titulo.style.display = "none";
-  }, 3000); // Espera 3 segundos antes de ocultar completamente
-}
-
-// Llama a la función después de 216 segundos (216,000 milisegundos)
-setTimeout(ocultarTitulo, 216000);
+ 

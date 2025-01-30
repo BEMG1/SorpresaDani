@@ -337,14 +337,29 @@
     <script src="main.js"></script>
     <script>
       function ocultarLetras() {
-        letras = document.getElementById('titulo');
-        letras.classList.add('hidden');
+      var letras = document.getElementById('titulo');
+      letras.classList.add('hidden');
+      letras.classList.remove('visible');
       }
 
       function mostrarLetras() {
-        letras = document.getElementById('titulo');
-        letras.classList.remove('hidden');
+      var letras = document.getElementById('titulo');
+      letras.classList.remove('hidden');
+      letras.classList.add('visible');
       }
-    </script>
+
+      function ocultarBotones() {
+        var botones = document.querySelector('.button-container');
+        botones.classList.add('hidden');
+        botones.classList.remove('visible');
+      }
+
+      function mostrarBotones() {
+        var botones = document.querySelector('.button-container');
+        botones.classList.remove('hidden');
+        botones.classList.add('visible');
+      }
+   
+      </script>
   </body>
 </html>
