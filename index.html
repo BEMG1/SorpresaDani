@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+</head>
+
+<body>
+    <div class="greetings" style="text-align: center;">
+        <div style="display: inline-block;">
+            <span>M</span>
+            <span>I</span>
+        </div>
+        <br>
+        <span>A</span>
+        <span>M</span>
+        <span>O</span>
+        <span>R</span>
+        <span>♡</span>
+    </div>
+    <div class="description">
+        <span>Te tengo una sorpresa 🤫</span>
+    </div>
+    <div class="button">
+        <button class="botones" onclick="mostrarModal()" >
+            <a style="color: #fff;">¿Quieres saber cúal es?</a>
+        </button>
+    </div>
+
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+            <p>Y la sorpresa es una pregunta, que me gustaria que me contaras</p>
+            <button onclick="redirigir()">¿Quieres saber la pregunta?</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal() {
+            // document.getElementById('Modal').style.display = 'flex';
+            const modal = document.getElementById('Modal');
+            modal.classList.add('active');
+            modal.classList.remove('hidden');
+        }
+        function redirigir() {
+            window.location.href = 'flower.html';
+        }
+    </script>
+</body>
+
+</html>
